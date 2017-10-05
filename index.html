@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Webber Flight Tracker</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+</head>
+
+<body>
+ <div id="wrapper">
+  <h1>Flight Prices by Region-S. America</h1>
+
+  <table id="keywords" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th><span>Place</span></th>
+        <th><span>Min Price</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lalign">Medellin</td>
+        <td>488</td>
+      </tr>
+      <tr>
+        <td class="lalign">Bogota</td>
+        <td>493</td>
+      </tr>
+      <tr>
+        <td class="lalign">Cali</td>
+        <td>640</td>
+      </tr>
+      <tr>
+        <td class="lalign">Quito</td>
+        <td>649</td>
+      </tr>
+      <tr>
+        <td class="lalign">Lima</td>
+        <td>654</td>
+      </tr>
+      <tr>
+        <td class="lalign">Rio de Janeiro</td>
+        <td>699</td>
+      </tr>
+      <tr>
+        <td class="lalign">Santiago</td>
+        <td>882</td>
+      </tr>
+      <tr>
+        <td class="lalign">Buenos Aires</td>
+        <td>903</td>
+      </tr>
+      <tr>
+        <td class="lalign">Sao Paulo</td>
+        <td>919</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+
+<div class="picture">
+  <img src="images/samerica.jpg" alt="South America" style="float:left;height:520px;padding-left:10px;">
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $('#keywords').tablesorter( {sortList: [[1,0]]} );
+});
+</script>
+</body>
+</html>
